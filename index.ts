@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 mongoose.set('strictQuery', true);
 console.log(process.env.DATABASE_HOST)
-const DB_URL = `mongodb://${process.env.DATABASE_HOST}:${process.env.DATABASE_PORT}/${process.env.DATABASE_NAME}`;
+const DB_URL = `mongodb+srv://phuwowsc:Phuocmai123@app.g6n20yq.mongodb.net/?retryWrites=true&w=majority`;
 const url = 'mongodb://127.0.0.1:27017/dbtest';
 mongoose.connect(DB_URL)
 .then(()=> {console.log('connect database success')})
